@@ -1,6 +1,6 @@
 # Schedulr
 
-[![Build Status](https://travis-ci.org/blanketastronomer/schedulr.svg?branch=develop)](https://travis-ci.org/blanketastronomer/schedulr)
+[![Build Status](https://travis-ci.org/blanketastronomer/schedulr.svg?branch=master)](https://travis-ci.org/blanketastronomer/schedulr)
 
 ## Getting Started
 
