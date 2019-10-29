@@ -1,5 +1,7 @@
 # Schedulr
 
+[![Build Status](https://travis-ci.org/blanketastronomer/schedulr.svg?branch=develop)](https://travis-ci.org/blanketastronomer/schedulr)
+
 ## Getting Started
 
 After you have cloned this repo, run this setup script to set up your machine
