@@ -1,0 +1,6 @@
+@import "mixins";
+
+footer#site-footer {
+  @include footer_styles;
+  bottom: 0;
+}

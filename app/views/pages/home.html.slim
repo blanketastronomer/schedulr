@@ -1,2 +1,46 @@
+ruby:
+  jos_url = 'https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/'
+
 h1
   | Welcome!
+h2 What is this?
+p
+  | Right now, this is just a simple, barebones Rails 6 app.  Eventually,
+  | though, this will be a full-fledged evidence-based scheduling app.
+h2 Evidence-based Scheduling?
+p
+  | Yes, evidence-based scheduling!  Evidence-based scheduling is a
+  |  scheduling method first conceived by Joel Splosky of Joel on Software.
+  | The main idea behind evidence-based scheduling is that project timelines
+  |  are a pain, and trying to get your developers to make schedules that adhere
+  | to your timeline is even more of a pain.  Switching to this method saves
+  |  your developers a lot of time and effort, and helps produce more accurate
+  |  timelines for your project based on REAL DATA.  No more pulling deadlines
+  |  out of thin air and trying to meet them!
+h2 So how does it work?
+p
+  | It's simple!  Every developer knows roughly how long it takes to write a
+  |  function, test, or documentation.  Each developer simply breaks all their
+  |  work tasks down into chunks of no more than 16 hours.  This helps them plan
+  |  out their features in a much more manageable way.  Once they have everything
+  |  planned out, all that's left to do is pick a task and start a timer!
+p
+  | Once that timer is started, just keep it running until you're either done
+  |  with your task, or you want to start on another task.  If anything that
+  |  stops you while you're in the middle of the task - meetings, server fire,
+  |  that one co-worker who likes to tell you fishing stories, etc., you simply
+  |  keep the timer running.  Why not stop the timer when things like this come
+  |  up?
+p
+  | Well, that's the beauty of this system.  The approach to determining a
+  |  completion date for your project/feature involves the estimates your
+  |  developers created in the planning stage.  Each task has an estimated time
+  |  to completion and an actual time that it took to be completed.  From those
+  |  two values, a velocity is calculated, and then a Monte Carlo simulation
+  |  is run on all those velocities, which then gives an accurate set of
+  |  probabilities that a project/feature will be complete by a given date.
+p
+  | If you'd like to find out more, you can find a more in-depth explanation
+  |  of how this all works #{link_to 'here', jos_url, target: '_blank'}.
+h2 So when will this be ready?
+p When it's ready, of course!

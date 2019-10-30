@@ -12,7 +12,11 @@ html[lang="en"]
     = stylesheet_link_tag :application, media: "all"
     = csrf_meta_tags
   body
-    = render "flashes"
-    = yield
+    = render "navigation"
+    #site-content
+      = render "flashes"
+      #page-content
+        = yield
+    = render "footer"
     = render "javascript"
     = render "css_overrides"

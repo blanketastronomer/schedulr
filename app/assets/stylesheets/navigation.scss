@@ -1,0 +1,6 @@
+@import "mixins";
+
+nav#site-navigation {
+  @include nav_styles;
+  top: 0;
+}
