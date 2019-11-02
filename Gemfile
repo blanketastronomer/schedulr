@@ -67,3 +67,4 @@ gem 'rack-timeout', group: :production
 gem 'cucumber-rails', group: [:development, :test], require: false
 gem 'database_cleaner', group: [:development, :test]
 gem 'slim-rails'
+gem 'devise'
