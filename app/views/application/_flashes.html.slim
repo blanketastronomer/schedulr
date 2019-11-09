@@ -1,7 +1,4 @@
 - if flash.any?
   .flashes
     - user_facing_flashes.each do |key, value|
-      |  <div class="flash-
-      = key
-      | ">
-      = value
+      = content_tag :div, value, class: ["flash-#{key}"]
