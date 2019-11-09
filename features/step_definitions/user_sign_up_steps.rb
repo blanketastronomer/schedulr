@@ -30,7 +30,7 @@ end
 
 When(/^I sign up with an invalid email address$/) do
   @visitor = @visitor.merge(email: INVALID_EMAIL)
-  sign_up_with @visitor
+  sign_up_with visitor: @visitor
 end
 
 Then(/^I should see an invalid email message$/) do
