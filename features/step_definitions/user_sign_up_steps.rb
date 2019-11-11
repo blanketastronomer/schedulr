@@ -66,6 +66,5 @@ When(/^I sign up with a mismatched password and password confirmation$/) do
 end
 
 Then(/^I should see a mismatched password message$/) do
-  devise_error = I18n.t 'errors.messages.not_saved.one', resource: 'user'
-  expect(page).to have_text devise_error
+  expect(page).to have_text 'prohibited this user from being saved'
 end
