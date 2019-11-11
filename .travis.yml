@@ -15,6 +15,7 @@ script:
   - bundle exec rake ci:tests
 services:
   - postgresql
+  - xvfb
 notifications:
   email: false
 addons:
