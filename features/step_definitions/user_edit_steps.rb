@@ -2,10 +2,8 @@ include Warden::Test::Helpers
 Warden.test_mode!
 After { Warden.test_reset! }
 
-And(/^I visit the "([^"]*)" page$/) do |page_name|
-  new_path = page_name.split.join('_').downcase
-  page_path = send("#{new_path}_registration_path")
-  visit page_path
+And(/^I visit the Edit User page$/) do
+  visit edit_user_registration_path
 end
 
 When(/^I edit my email address$/) do

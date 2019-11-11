@@ -6,7 +6,7 @@ Feature: Edit user
   Background:
     Given I exist as a user
     And I am logged in
-    And I visit the "Edit User" page
+    And I visit the Edit User page
 
   Scenario: I edit my email address
     When I edit my email address
