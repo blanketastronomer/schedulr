@@ -5,6 +5,10 @@ rvm:
 before_script:
   - bundle exec rake db:create --all
   - bundle exec rake db:migrate
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+  - fluxbox >/dev/null 2>&1 &
 script:
   - RAILS_ENV=test bundle exec rails webpacker:install
   - RAILS_ENV=test bundle exec rails webpacker:compile
@@ -13,3 +17,10 @@ services:
   - postgresql
 notifications:
   email: false
+addons:
+  chrome: stable
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable fluxbox
